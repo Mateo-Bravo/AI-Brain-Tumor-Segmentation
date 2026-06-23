@@ -1,0 +1,68 @@
+# MODELO DEL PROYECTO
+mkdir -p app/controllers
+mkdir -p app/core
+mkdir -p app/database/migrations
+mkdir -p app/models
+mkdir -p app/storage
+mkdir -p app/ai
+touch app/__init__.py
+touch app/api/__init__.py app/api/images.py app/api/users.py app/api/diagnosis.py
+touch app/controllers/__init__.py app/controllers/image_controller.py app/controllers/user_controller.py app/controllers/diagnosis_controller.py
+touch app/core/__init__.py app/core/config.py
+touch app/database/__init__.py app/database/repository.py
+touch app/models/__init__.py app/models/base.py app/models/image.py app/models/diagnosis.py
+touch app/storage/__init__.py app/storage/image_storage.py
+touch app/ai/__init__.py app/ai/diagnosis_model.py
+touch app/main.py .env .gitignore README.md requirements.txt
+
+# Estructura
+Sistema_Web/
+│
+├── Backend/
+│   ├── venv/                  # Entorno virtual (no se incluye en el repositorio)
+│   ├── app/
+│   │   ├── __init__.py
+│   │   │
+│   │   ├── api/               # Routers (Endpoints)
+│   │   │   ├── __init__.py
+│   │   │   ├── images.py      # Endpoints para gestión de imágenes
+│   │   │   ├── users.py       # Endpoints para gestión de usuarios
+│   │   │   └── diagnosis.py   # Endpoints para diagnóstico con IA
+│   │   │
+│   │   ├── controllers/       # Lógica de negocio (Controladores)
+│   │   │   ├── __init__.py
+│   │   │   ├── image_controller.py   # Controlador de imágenes
+│   │   │   ├── user_controller.py    # Controlador de usuarios
+│   │   │   └── diagnosis_controller.py   # Controlador de diagnóstico IA
+│   │   │
+│   │   ├── core/              # Configuración y seguridad
+│   │   │   ├── __init__.py
+│   │   │   └── config.py      # Configuración global
+│   │   │
+│   │   ├── database/          # Base de datos y migraciones
+│   │   │   ├── __init__.py
+│   │   │   ├── repository.py  # Repositorios para operaciones DB
+│   │   │   └── migrations/    # Migraciones (Alembic)
+│   │   │
+│   │   ├── models/            # Modelos de datos
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py        # Base de modelos
+│   │   │   ├── image.py       # Modelo de imágenes
+│   │   │   └── diagnosis.py   # Modelo de diagnóstico
+│   │   │
+│   │   ├── storage/           # Almacenamiento de archivos
+│   │   │   ├── __init__.py
+│   │   │   └── image_storage.py  # Gestión del almacenamiento de imágenes
+│   │   │
+│   │   └── ai/                # Módulo de IA (Redes Neuronales)
+│   │       ├── __init__.py
+│   │       └── diagnosis_model.py   # Modelo IA para diagnóstico
+│   │
+│   ├── .env                   # Variables de entorno
+│   ├── .gitignore             # Archivos a ignorar por Git
+│   ├── README.md              # Descripción del proyecto
+│   └── requirements.txt       # Dependencias del proyecto
+│
+└── Frontend/                  # Directorio para el frontend (Vue.js).
+
+

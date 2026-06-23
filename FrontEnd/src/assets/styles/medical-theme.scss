@@ -1,0 +1,174 @@
+// Colores médicos (definidos directamente)
+:root {
+  --medical-primary: #1e40af;
+  --medical-secondary: #64748b;
+  --medical-success: #059669;
+  --medical-warning: #d97706;
+  --medical-danger: #dc2626;
+  --medical-info: #0284c7;
+
+  --segmentation-tumor: #ef4444;
+  --segmentation-edema: #f59e0b;
+  --segmentation-normal: #10b981;
+  --segmentation-necrosis: #3b82f6;
+
+  --background-main: #f8fafc;
+  --background-card: #ffffff;
+  --background-sidebar: #1e293b;
+  --background-header: #0f172a;
+
+  --spacing-diagnosis: 2rem;
+  --spacing-card: 1.5rem;
+  --spacing-form: 1rem;
+
+  --image-viewer-min-height: 400px;
+  --image-viewer-max-height: 600px;
+  --thumbnail-size: 80px;
+
+  --mobile-portrait: 480px;
+  --mobile-landscape: 768px;
+  --tablet: 1024px;
+  --desktop: 1200px;
+  --wide-screen: 1600px;
+}
+
+// Reset y estilos base
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    'Inter',
+    'Segoe UI',
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background-color: var(--background-main);
+  color: #1a202c;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Componentes médicos base
+.medical-card {
+  background: var(--background-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-card);
+  margin-bottom: var(--spacing-form);
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+
+  &.urgent {
+    border-left: 4px solid var(--medical-danger);
+  }
+
+  &.normal {
+    border-left: 4px solid var(--medical-success);
+  }
+}
+
+.diagnosis-panel {
+  background: var(--background-card);
+  border-radius: 8px;
+  padding: var(--spacing-diagnosis);
+  min-height: var(--image-viewer-min-height);
+}
+
+.upload-zone {
+  border: 2px dashed #cbd5e0;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #f7fafc;
+  transition: all 0.3s ease;
+
+  &.dragover {
+    border-color: var(--medical-primary);
+    background: rgba(30, 64, 175, 0.1);
+  }
+}
+
+// Estados médicos
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  &.positive {
+    background: #fee2e2;
+    color: var(--medical-danger);
+  }
+
+  &.negative {
+    background: #d1fae5;
+    color: var(--medical-success);
+  }
+
+  &.pending {
+    background: #fef3c7;
+    color: var(--medical-warning);
+  }
+}
+
+// Colores de segmentación
+.segmentation-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+
+    .color-box {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+
+      &.tumor {
+        background: var(--segmentation-tumor);
+      }
+      &.edema {
+        background: var(--segmentation-edema);
+      }
+      &.normal {
+        background: var(--segmentation-normal);
+      }
+      &.necrosis {
+        background: var(--segmentation-necrosis);
+      }
+    }
+  }
+}
+
+// Responsive médico
+@media (max-width: 768px) {
+  .medical-card {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .diagnosis-panel {
+    padding: 1rem;
+    min-height: 300px;
+  }
+
+  .upload-zone {
+    padding: 2rem 1rem;
+  }
+}

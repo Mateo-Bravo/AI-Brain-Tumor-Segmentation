@@ -1,0 +1,20 @@
+# Archivos de configuración sensibles
+# .env se pone por temas de desarrollo
+
+# Otros archivos y directorios
+/logs/
+/temp/
+/venv/
+
+# Archivos de entorno virtual
+.venv/
+
+# Excluir carpetas de caché
+__pycache__/
+*.py[cod]
+
+# Excluir archivos compilados por Python
+*.cpython-*.pyc
+*.pyo
+*.pyd
+

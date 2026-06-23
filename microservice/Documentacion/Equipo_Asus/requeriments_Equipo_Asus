@@ -1,0 +1,93 @@
+# requerimientos necesarios para el microservicio de segmentacion medica
+
+############################################
+# Web Framework
+############################################
+fastapi==0.115.2
+uvicorn==0.31.1
+python-multipart==0.0.9
+httpx==0.27.2
+
+############################################
+# Database
+############################################
+SQLAlchemy==2.0.36
+psycopg2-binary==2.9.9
+
+############################################
+# Deep Learning - PyTorch cu130 (ya funciona con GPU)
+############################################
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch
+torchvision
+
+############################################
+# Deep Learning - TensorFlow
+# Instalado sin forzar version de numpy para evitar conflictos
+############################################
+tensorflow==2.18.0
+
+############################################
+# NumPy - version compatible con TF 2.18 Y checkpoint NumPy 2.x
+# TF 2.18 acepta numpy>=1.26.0,<2.1.0
+# numpy 2.0.0 es la unica version 2.x dentro de ese rango
+############################################
+numpy==2.0.0
+
+############################################
+# nnU-Net Framework
+############################################
+nnunetv2
+
+############################################
+# Medical Image Processing
+############################################
+nibabel
+pydicom==2.4.0
+
+############################################
+# Image Utilities
+############################################
+scikit-image
+pillow==10.0.1
+imageio==2.37.0
+opencv-python==4.10.0.84
+
+############################################
+# Scientific Computing
+############################################
+scipy
+pandas==2.2.3
+
+############################################
+# Utilities & Config
+############################################
+python-dotenv==1.1.1
+pydantic==2.9.2
+pydantic-settings==2.6.1
+PyYAML==6.0.3
+loguru==0.7.2
+requests==2.32.5
+python-magic==0.4.27
+
+############################################
+# Security & Auth
+############################################
+cryptography==43.0.1
+PyJWT==2.9.0
+bleach==6.1.0
+
+############################################
+# Rate Limiting & Monitoring
+############################################
+slowapi==0.1.9
+prometheus_client==0.21.0
+psutil==7.1.0
+nvidia-ml-py3==7.352.0
+pybreaker==1.4.1
+GPUtil==1.4.0
+
+############################################
+# Testing
+############################################
+pytest==8.3.3

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva Solicitud de Administrador</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #202020;">
+    <div style="background: linear-gradient(135deg, #dc3545, #ff6b7a); padding: 30px; border-radius: 10px; text-align: center; margin-bottom: 30px;">
+        <h1 style="color: white; margin: 0; font-size: 28px;">🏥 Sistema Médico</h1>
+        <p style="color: white; margin: 10px 0 0 0; opacity: 0.9;">Solicitud de Administrador</p>
+    </div>
+    
+    <div style="background: #F2F2F2; padding: 30px; border-radius: 10px; border-left: 4px solid #F10706;">
+        <h2 style="color: #262626; margin-top: 0;">🔐 Nueva Solicitud de Administrador</h2>
+        <p style="color: #303030; line-height: 1.6; font-size: 16px;">
+            Se ha registrado una nueva cuenta de administrador que requiere tu aprobación.
+        </p>
+        
+        <div style="background: #FFFFFF; border: 1px solid #D9D9D9; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #262626; margin-top: 0;">👤 Información del Solicitante:</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px 0; border-bottom: 1px solid #D9D9D9; color: #000000;"><strong>Nombre:</strong></td>
+                    <td style="padding: 8px 0; border-bottom: 1px solid #D9D9D9; color: #262626;">{{user_full_name}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; border-bottom: 1px solid #D9D9D9; color: #000000;"><strong>Email:</strong></td>
+                    <td style="padding: 8px 0; border-bottom: 1px solid #D9D9D9; color: #262626;">{{user_email}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; border-bottom: 1px solid #D9D9D9; color: #000000;"><strong>Especialidad:</strong></td>
+                    <td style="padding: 8px 0; border-bottom: 1px solid #D9D9D9; color: #262626;">{{user_specialty}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #000000;"><strong>Teléfono:</strong></td>
+                    <td style="padding: 8px 0; color: #262626;">{{user_phone}}</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{activation_url}}" 
+               style="display: inline-block; background: linear-gradient(135deg, #dc3545, #ff6b7a); color: #FFFFFF; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 6px rgba(115, 3, 2, 0.3); border: 2px solid #C6202A;">
+                🔐 REVISAR Y ACTIVAR CUENTA
+            </a>
+            <!-- Nota: Al hacer hover cambiaría a background: #D0021B -->
+        </div>
+        
+        <p style="color: #000000; font-size: 14px; line-height: 1.5;">
+            <strong>¿No puedes hacer clic en el botón?</strong><br>
+            Copia y pega este enlace en tu navegador:<br>
+            <span style="background: #D9D9D9; padding: 8px; border-radius: 4px; font-family: monospace; word-break: break-all; display: block; margin: 10px 0;">{{activation_url}}</span>
+        </p>
+        
+        <hr style="border: none; border-top: 1px solid #D9D9D9; margin: 20px 0;">
+        
+        <p style="color: #000000; font-size: 13px; margin-bottom: 0;">
+            ⚠️ Esta solicitud requiere tu revisión y aprobación.<br>
+            El usuario no podrá acceder al sistema hasta que actives su cuenta.
+        </p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; color: #A6A6A6; font-size: 12px;">
+        <p>© 2025 Sistema Médico | Plataforma de Análisis de Imágenes Médicas</p>
+    </div>
+</body>
+</html>

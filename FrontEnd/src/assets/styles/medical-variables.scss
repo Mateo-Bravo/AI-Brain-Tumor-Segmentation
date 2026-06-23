@@ -1,0 +1,47 @@
+// 🏥 COLORES MÉDICOS ESPECÍFICOS
+$medical-primary: #1E40AF !default;        // Azul médico profesional
+$medical-secondary: #64748B !default;      // Gris neutro
+$medical-success: #059669 !default;        // Verde para resultados normales/negativos
+$medical-warning: #D97706 !default;        // Naranja para advertencias
+$medical-danger: #DC2626 !default;         // Rojo para resultados positivos/críticos
+$medical-info: #0284C7 !default;          // Azul información
+
+// 🎨 COLORES PARA SEGMENTACIÓN IA
+$segmentation-tumor: #EF4444 !default;     // Rojo para tumores
+$segmentation-edema: #F59E0B !default;     // Amarillo para edemas  
+$segmentation-normal: #10B981 !default;    // Verde para tejido normal
+$segmentation-necrosis: #3B82F6 !default;  // Azul para necrosis
+
+// 📊 COLORES PARA CLASIFICACIÓN
+$classification-positive: #DC2626 !default; // Positivo (malo)
+$classification-negative: #059669 !default; // Negativo (bueno)
+$classification-uncertain: #D97706 !default; // Incierto
+
+// 🎯 FONDOS Y SUPERFICIES
+$background-main: #F8FAFC !default;
+$background-card: #FFFFFF !default;
+$background-sidebar: #1E293B !default;
+$background-header: #0F172A !default;
+
+// 📏 ESPACIADO MÉDICO
+$spacing-diagnosis: 2rem !default;
+$spacing-card: 1.5rem !default;
+$spacing-form: 1rem !default;
+
+// 🖼️ DIMENSIONES PARA IMÁGENES MÉDICAS
+$image-viewer-min-height: 400px !default;
+$image-viewer-max-height: 600px !default;
+$thumbnail-size: 80px !default;
+
+// 📱 BREAKPOINTS ESPECÍFICOS
+$mobile-portrait: 480px !default;
+$mobile-landscape: 768px !default;
+$tablet: 1024px !default;
+$desktop: 1200px !default;
+$wide-screen: 1600px !default;
+
+// 🎨 COLORES ADICIONALES
+$medical-blue: #1E40AF !default;
+$medical-green: #059669 !default;
+$medical-red: #DC2626 !default;
+$medical-orange: #EA580C !default;

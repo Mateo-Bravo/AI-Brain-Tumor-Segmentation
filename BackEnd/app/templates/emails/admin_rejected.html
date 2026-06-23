@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitud Rechazada</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #202020;">
+    <div style="background: linear-gradient(135deg, #dc3545, #ff6b7a); padding: 30px; border-radius: 10px; text-align: center; margin-bottom: 30px;">
+        <h1 style="color: white; margin: 0; font-size: 28px;">🏥 Sistema Médico</h1>
+        <p style="color: white; margin: 10px 0 0 0; opacity: 0.9;">Solicitud de Cuenta</p>
+    </div>
+    
+    <div style="background: #F2F2F2; padding: 30px; border-radius: 10px; border-left: 4px solid #730302;">
+        <h2 style="color: #262626; margin-top: 0;">Hola {{user_name}}</h2>
+        <p style="color: #303030; line-height: 1.6; font-size: 16px;">
+            Lamentamos informarte que tu solicitud de cuenta de administrador ha sido <strong>rechazada</strong>.
+        </p>
+        
+        <div style="background: #FFFFFF; border: 1px solid #730302; border-radius: 8px; padding: 20px; margin: 20px 0;">
+            <h3 style="color: #000000; margin-top: 0;">❌ Solicitud no aprobada</h3>
+            <p style="color: #000000; margin: 0;">
+                {{reason}}
+            </p>
+        </div>
+        
+        <p style="color: #000000; font-size: 14px; line-height: 1.5;">
+            <strong>📞 ¿Tienes preguntas?</strong><br>
+            Si crees que esto es un error o deseas más información, 
+            puedes contactar al administrador del sistema para aclarar el motivo del rechazo.
+        </p>
+        
+        <hr style="border: none; border-top: 1px solid #D9D9D9; margin: 20px 0;">
+        
+        <p style="color: #000000; font-size: 13px; margin-bottom: 0;">
+            📝 Puedes intentar registrarte nuevamente si corriges los requisitos mencionados.<br>
+            Asegúrate de cumplir con todos los criterios de validación.
+        </p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; color: #A6A6A6; font-size: 12px;">
+        <p>© 2025 Sistema Médico | Plataforma de Análisis de Imágenes Médicas</p>
+    </div>
+</body>
+</html>

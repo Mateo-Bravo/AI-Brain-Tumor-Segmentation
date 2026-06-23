@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 
+==============================================================
+TEMPLATE DE EMAIL: VERIFICACIÓN DE CUENTA
+==============================================================
+Este template se usa para enviar emails de verificación a
+médicos que se registran en el sistema.
+
+Variables dinámicas disponibles:
+- {{verification_url}} - URL completa para verificar la cuenta
+
+Estilo visual:
+- Gradiente azul-púrpura en header
+- Botón de acción prominente
+- Enlace alternativo para casos donde no funcione el botón
+- Diseño responsive y profesional
+============================================================== 
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- Título del email que aparece en la bandeja de entrada -->
+    <title>Verificar Cuenta</title>
+</head>
+<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #202020;">
+    <!-- HEADER CON GRADIENTE Y BRANDING -->
+    <div style="background: linear-gradient(135deg, #dc3545, #ff6b7a); padding: 30px; border-radius: 10px; text-align: center; margin-bottom: 30px;">
+        <!-- Título principal del sistema -->
+        <h1 style="color: white; margin: 0; font-size: 28px;">🏥 Sistema Médico</h1>
+        <!-- Subtitulo descriptivo -->
+        <p style="color: white; margin: 10px 0 0 0; opacity: 0.9;">Verificación de Cuenta</p>
+    </div>
+    
+    <!-- CONTENIDO PRINCIPAL DEL EMAIL -->
+    <div style="background: #F2F2F2; padding: 30px; border-radius: 10px; border-left: 4px solid #F10706;">
+        <!-- Saludo de bienvenida -->
+        <h2 style="color: #262626; margin-top: 0;">¡Bienvenido/a! 👋</h2>
+        
+        <!-- Explicación del propósito del email -->
+        <p style="color: #303030; line-height: 1.6; font-size: 16px;">
+            Gracias por registrarte en nuestro sistema médico. Para completar tu registro y acceder a todas las funcionalidades, necesitas verificar tu dirección de correo electrónico.
+        </p>
+        
+        <!-- BOTÓN PRINCIPAL DE ACCIÓN -->
+        <div style="text-align: center; margin: 30px 0;">
+            <!-- Botón que usa la variable dinámica verification_url -->
+            <a href="{{verification_url}}" 
+               style="display: inline-block; background: linear-gradient(135deg, #dc3545, #ff6b7a); color: #FFFFFF; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; box-shadow: 0 4px 6px rgba(115, 3, 2, 0.3); border: 2px solid #C6202A;">
+                ✅ Verificar mi cuenta
+            </a>
+        </div>
+        
+        <!-- ENLACE ALTERNATIVO PARA COMPATIBILIDAD -->
+        <p style="color: #000000; font-size: 14px; line-height: 1.5;">
+            <strong>¿No puedes hacer clic en el botón?</strong><br>
+            Copia y pega este enlace en tu navegador:<br>
+            <!-- URL visible para copiar manualmente -->
+            <span style="background: #e9ecef; padding: 8px; border-radius: 4px; font-family: monospace; word-break: break-all; display: block; margin: 10px 0;">{{verification_url}}</span>
+        </p>
+        
+        <hr style="border: none; border-top: 1px solid #D9D9D9; margin: 20px 0;">
+        
+        <p style="color: #000000; font-size: 13px; margin-bottom: 0;">
+            🔒 Este enlace es seguro y expirará por razones de seguridad.<br>
+            Si no solicitaste esta cuenta, puedes ignorar este mensaje de forma segura.
+        </p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; color: #A6A6A6; font-size: 12px;">
+        <p>© 2025 Sistema Médico | Plataforma de Análisis de Imágenes Médicas</p>
+    </div>
+</body>
+</html>

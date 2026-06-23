@@ -1,0 +1,98 @@
+############################################
+# MODELOS (no subir)
+############################################
+*.h5
+*.keras
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.tflite
+
+# Carpeta de modelos
+models/*
+!models/README.md  
+
+############################################
+# ARCHIVOS TEMPORALES / SALIDA
+############################################
+results/*
+temp/*
+output/*
+uploads/*
+inference_output/*
+
+# Para nnU-Net v2
+nnunetv2_results/*
+nnunetv2_preprocessed/*
+nnunet_results/*
+nnUNet_results/*
+
+############################################
+# DATOS GRANDES (NIFTI, numpy, etc.)
+############################################
+*.nii
+*.nii.gz
+*.nrrd
+*.npy
+*.npz
+*.pickle
+*.pkl
+*.mha
+*.mhd
+
+############################################
+# CACHÉS / COMPILADOS
+############################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# TensorFlow
+*.pb
+checkpoint/
+train_dir/
+saved_model/
+
+# PyTorch Lightning / HuggingFace
+lightning_logs/
+.cache/
+huggingface/
+
+############################################
+# ENTORNOS / PAQUETES
+############################################
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+
+############################################
+# LOGS
+############################################
+logs/
+*.log
+
+############################################
+# IDE / SISTEMA OPERATIVO
+############################################
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+
+# Windows / Mac / Linux
+.DS_Store
+Thumbs.db
+desktop.ini
+
+############################################
+# OTROS
+############################################
+user_journey.png
+*.tmp

@@ -1,0 +1,96 @@
+# ============================================
+# Framework Web
+# ============================================
+fastapi==0.115.2
+uvicorn==0.31.1
+python-multipart==0.0.9
+pydantic==2.9.2
+pydantic-settings==2.6.1
+httpx==0.27.2
+
+# ============================================
+# Database
+# ============================================
+SQLAlchemy==2.0.36
+psycopg2-binary==2.9.9
+
+# ============================================
+# Deep Learning - TensorFlow (aarch64 + CUDA 13)
+# ⚠️  NO usar tensorflow==2.18.0 → no tiene GPU para aarch64
+# ✅  Usar nvidia-tensorflow del repositorio oficial NVIDIA
+# ============================================
+--extra-index-url https://developer.download.nvidia.com/compute/redist/
+nvidia-tensorflow
+
+# ============================================
+# Deep Learning - PyTorch con CUDA 13.0
+# ============================================
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch
+torchvision
+
+# ============================================
+# nnU-Net Framework
+# ============================================
+dynamic-network-architectures
+nnunetv2
+
+# ============================================
+# Medical Image Processing
+# ============================================
+nibabel
+pydicom==2.4.0
+scipy
+scikit-image
+
+# ============================================
+# Image Processing
+# ⚠️  numpy debe ser ==1.26.4 → nvidia-tensorflow no es compatible con numpy>=2
+# ============================================
+numpy==1.26.4
+opencv-python==4.10.0.84
+Pillow==10.1.0
+imageio==2.37.0
+
+# ============================================
+# Scientific Computing
+# ============================================
+pandas==2.2.3
+
+# ============================================
+# Utilities & Config
+# ============================================
+python-dotenv==1.1.1
+PyYAML==6.0.3
+loguru==0.7.2
+requests==2.32.5
+python-magic==0.4.27
+
+# ============================================
+# Security & Auth
+# ============================================
+cryptography==43.0.1
+PyJWT==2.9.0
+bleach==6.1.0
+
+# ============================================
+# Rate Limiting & Monitoring
+# ============================================
+slowapi==0.1.9
+prometheus_client==0.21.0
+psutil==7.1.0
+nvidia-ml-py
+nvitop
+pybreaker==1.4.1
+GPUtil==1.4.0
+
+# ============================================
+# Testing
+# ============================================
+pytest==8.3.3
+
+# ============================================
+# NOTAS DE INSTALACIÓN DEL SISTEMA (ejecutar antes de pip install):
+# --------------------------------------------
+# sudo apt install libcudnn9-cuda-12
+# ============================================

@@ -1,0 +1,53 @@
+# ==============================================================================
+# DEPENDENCIAS DEL PROYECTO - Backend 
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Framework Web y Servidor ASGI
+# ------------------------------------------------------------------------------
+fastapi==0.115.0          # Framework web moderno y rápido para construir APIs
+uvicorn==0.31.1           # Servidor ASGI de alto rendimiento para FastAPI
+
+# ------------------------------------------------------------------------------
+# ORM y Conectores de Base de Datos
+# ------------------------------------------------------------------------------
+sqlalchemy==2.0.35        # ORM para manejo de base de datos SQL
+pymysql==1.1.1            # Conector MySQL/MariaDB para Python
+
+# ------------------------------------------------------------------------------
+# Configuración y Variables de Entorno
+# ------------------------------------------------------------------------------
+python-dotenv==1.0.1      # Carga variables de entorno desde archivos .env
+python-decouple==3.8      # Gestión de configuración y separación de settings
+
+# ------------------------------------------------------------------------------
+# Seguridad, Autenticación y Encriptación
+# ------------------------------------------------------------------------------
+cryptography==43.0.1                    # Biblioteca de criptografía primitiva
+python-jose[cryptography]==3.3.0       # Implementación de JWT (JSON Web Tokens)
+passlib[bcrypt]==1.7.4                 # Framework de hashing de contraseñas
+bcrypt==3.2.2                          # Algoritmo bcrypt (compatible con passlib 1.7.4)
+
+# ------------------------------------------------------------------------------
+# Manejo de Formularios y Archivos
+# ------------------------------------------------------------------------------
+python-multipart==0.0.9   # Soporte para datos multipart/form-data y subida de archivos
+
+# ------------------------------------------------------------------------------
+# Validación de Datos
+# ------------------------------------------------------------------------------
+email-validator==2.3.0    # Validación de direcciones de correo electrónico
+dnspython==2.8.0          # Toolkit DNS requerido por email-validator
+idna==3.11                # Soporte para nombres de dominio internacionalizados
+
+# ------------------------------------------------------------------------------
+# Cliente HTTP y Comunicación entre Microservicios
+# ------------------------------------------------------------------------------
+httpx==0.28.1             # Cliente HTTP asíncrono para comunicación con otros servicios
+requests==2.32.3          # Cliente HTTP clásico para peticiones síncronas
+
+# ------------------------------------------------------------------------------
+# Procesamiento de Imágenes Médicas
+# ------------------------------------------------------------------------------
+pydicom==3.0.1            # Lectura y escritura de archivos DICOM (imágenes médicas)
+

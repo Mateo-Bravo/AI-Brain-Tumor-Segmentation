@@ -1,0 +1,84 @@
+src/
+├── composables/
+│   ├── viewer/                    # 🖼️ VISOR DE IMÁGENES
+│   │   ├── use3DRendering.js -- listo 
+│   │   ├── useCanvasDrawing.js --  listo 
+│   │   ├── useCanvasResize.js -- listo
+│   │   ├── useCoordinates.js -- listo -
+│   │   ├── useCrosshairs.js -- listo - 
+│   │   ├── useFourViews3D.js -- listo -
+│   │   ├── useImageControls.js -- listo
+│   │   ├── useImageProcessing.js -- listo -
+│   │   ├── useImageProcessingWorker.js -- listo -
+│   │   ├── useMeasurements.js -- listo -
+│   │   ├── useQuadViews.js -- listo -
+│   │   ├── useSliceNavigation.js -- listo -
+│   │   └── useZoom.js -- listo -
+│   │   └── use3DControls.js  -- listo -
+│   │   └── useUIHelpers.js  -- listo -
+│   │   └── useFullscreenManager.js -- listo -
+│   │   └── useCanvasManagement.js -- listo -
+│   │   └── useVolumeRendering.js -- listo 
+│   │   └── useCrosshair3DSync.js -- listo
+│   │   └── useUIState.js -- listo
+│   │
+│   ├── data-management/           # 💾 GESTIÓN DE DATOS MÉDICOS
+│   │   ├── useNiftiProcessing.js --  listo -      # Procesamiento NIFTI -- 
+│   │   ├── useFileUpload.js -- listo -           # Carga de archivos -- 
+│   │   ├── usePatientData.js -- listo -          # CRUD de pacientes -- 
+│   │   └── useStudyStorage.js -- listo -         # Almacenamiento (IndexedDB)-- 
+│   │   └── useModalWorkflow.js -- listo -   
+│   │   └── useIndexedDB.js -- listo -
+│   │   └── useModalState.js -- listo -         
+│   │
+│   ├── ai/                        # 🤖 INTELIGENCIA ARTIFICIAL
+│   │   ├── useAIWorker.js -- listo -
+│   │   └── useAIEnhancement.js -- listo -
+│   │
+│   ├── api/                       # 🌐 BACKEND
+│   │   ├── useApi.js -- listo - 
+│   │   ├── usePatientAPI.js -- listo -
+│   │   └── useImageAPI.js -- listo -
+│   │
+│   ├── workers/                   # ⚙️ WEB WORKERS
+│   │   ├── useMedicalWorker.js -- listo -
+│   │
+│   └── shared/                    # 🔧 UTILIDADES COMPARTIDAS
+│       ├── useAccessDenied.js -- listo -
+│       └── useDebugHelpers.js -- listo - 
+│
+├── views/
+│   └── dashboard/
+│        └── DashboardView.vue          # ✅ MANTIENE su modal integrado
+│
+├── utils/
+│   ├── niftiOrientation.js
+│   └── formatters.js
+│   └── logger.js
+│
+└── workers/
+    ├── aiAnalysisWorker.js
+    └── imageProcessingWorker.js
+    └── medicalDataWorker.js
+
+//////////////
+use3DRendering.js
+✅ useAccessDenied.js
+✅ useAIWorker.js
+✅ useApi.js
+✅ useCanvasDrawing.js
+✅ useCrosshairs.js
+✅ useFourViews3D.js
+✅ useImageControls.js
+✅ useImageProcessing.js -- revisar esta puesto nuevas Funciones
+✅ useImageProcessingWorker.js -- revisar se realizo cambios
+✅ useMeasurements.js
+✅ useMedicalWorker.js
+✅ useQuadViews.js
+✅ useZoom.js
+✅ useCanvasResize.js
+✅ useCoordinates.js
+✅ useAIEnhancement.js
+✅ useSliceNavigation.js 
+
+//////////
